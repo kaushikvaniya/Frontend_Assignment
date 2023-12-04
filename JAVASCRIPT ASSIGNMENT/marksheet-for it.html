@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark-sheet</title>
+    <style>
+        .marksheet {
+            border: 2px solid black;
+            margin: 10px;
+            padding: 20px;
+            height: 550px;
+            width: 400px;
+        }
+
+        body {
+            background-color: #f1e8e3;
+        }
+
+        input {
+            margin: 8px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="marksheet">
+        <table>
+            <h2>MARKSHEET FOR INFORMATION TECHNOLOGY</h2>
+            <h3>Enter marks</h3>
+            <tr>
+                <td>
+                    <label for="">1.C Language</label>
+                </td>
+                <td><input type="tel" name="" id="s1"></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">2.C++ Language</label>
+                </td>
+                <td> <input type="tel" name="" id="s2"></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">3.Database</label>
+                </td>
+                <td><input type="tel" name="" id="s3"></td>
+
+            </tr>
+            <tr>
+                <td>
+                    <label for="">4.HTML</label>
+                </td>
+                <td><input type="tel" name="" id="s4"></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">5.CSS</label>
+                </td>
+                <td> <input type="tel" name="" id="s5"> </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">6.php</label>
+                </td>
+                <td><input type="tel" name="" id="s6"> </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">7.Core java</label>
+                </td>
+                <td><input type="tel" name="" id="s7"></td>
+            </tr>
+        </table>
+        <div>
+            <button id="result">Result</button>
+        </div>
+        <div>
+            <p>Total is : <span id="total"></span> /350</p>
+        </div>
+        <div>
+            <p>
+                Percentage is : <span id="per"></span> %
+            </p>
+        </div>
+    </div>
+    <script>
+        document.getElementById("result").addEventListener("click", () => {
+            let s1, s2, s3, s4, s5, s6, s7, ans;
+            s1 = parseFloat(document.getElementById("s1").value);
+            s2 = parseFloat(document.getElementById("s2").value);
+            s3 = parseFloat(document.getElementById("s3").value);
+            s4 = parseFloat(document.getElementById("s4").value);
+            s5 = parseFloat(document.getElementById("s5").value);
+            s6 = parseFloat(document.getElementById("s6").value);
+            s7 = parseFloat(document.getElementById("s7").value);
+            ans = s1 + s2 + s3 + s4 + s5 + s6 + s7;
+            total.innerHTML = ans;
+            per.innerHTML = ans / 7
+
+
+        })
+    </script>
+</body>
+
+</html>

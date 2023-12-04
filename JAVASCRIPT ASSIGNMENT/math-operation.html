@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathoperator</title>
+    <style>
+        .onenumber {
+            margin: 10px 0;
+        }
+
+        .box {
+            height: 250px;
+            width: 320px;
+            border: 1px solid black;
+            margin: 0 auto;
+        }
+
+        body {
+            background-color: #f1e8e3;
+        }
+
+        button {
+            font-size: 20px;
+            margin: 10px 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h2>Maths operator</h2>
+        <div class="onenumber">
+            <label for="" id="">Enter 1st Number: </label>
+            <input type="tel" name="" id="fristnumber">
+        </div>
+        <div class="twonumber">
+            <label for="" id="">Enter 2nd Number: </label>
+            <input type="tel" name="" id="secondnumber">
+        </div>
+        <div class="button">
+            <button type="button" id="add">+</button>
+            <button type="button" id="minus">-</button>
+            <button type="button" id="asterisk">*</button>
+            <button type="button" id="division">/</button>
+
+        </div>
+        <div>
+            <p>Answer is: <span id="answer"></span></p>
+        </div>
+    </div>
+    <script>
+        let answer = document.getElementById("answer");
+        document.getElementById("add").addEventListener("click", () => {
+            let x = parseFloat(document.getElementById("fristnumber").value);
+            let y = parseFloat(document.getElementById("secondnumber").value);
+            let result = x + y;
+            answer.innerHTML = result;
+        });
+        document.getElementById("minus").addEventListener("click", () => {
+            let x = parseFloat(document.getElementById("fristnumber").value);
+            let y = parseFloat(document.getElementById("secondnumber").value);
+            let result = x - y;
+            answer.innerHTML = result;
+        });
+        document.getElementById("asterisk").addEventListener("click", () => {
+            let x = parseFloat(document.getElementById("fristnumber").value);
+            let y = parseFloat(document.getElementById("secondnumber").value);
+            let result = x * y;
+            answer.innerHTML = result;
+        });
+        document.getElementById("division").addEventListener("click", () => {
+            let x = parseFloat(document.getElementById("fristnumber").value);
+            let y = parseFloat(document.getElementById("secondnumber").value);
+            let result = x / y;
+            answer.innerHTML = result;
+        });
+    </script>
+</body>
+
+</html>
