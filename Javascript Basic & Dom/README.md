@@ -79,6 +79,7 @@ Q.35 Write a program make a summation of given number (E.g., 1523 Ans: - 11) in 
 Q.36 Write a program you have to make a summation of first and last Digit. (E.g., 1234 Ans: -5) in JS?
 
 Q.37 Use console.log() and escape characters to print the following pattern in JS?
+
 1 1 1 1 1
 2 1 2 4 8
 3 1 3 9 27
@@ -86,26 +87,27 @@ Q.37 Use console.log() and escape characters to print the following pattern in J
 5 1 5 25 125
 
 Q.38 Use pattern in console.log in JS?
+
 1) 1
-1 0
-1 0 1
-1 0 1 0
-1 0 1 0 1
+   1 0
+   1 0 1
+   1 0 1 0
+   1 0 1 0 1
 2) A
-B C
-D E F
-G H I J
-K L M N O
+   B C
+   D E F
+   G H I J
+   K L M N O
 3) 1
-2 3
-4 5 6
-7 8 9 10
-11 12 13 14 15
+   2 3
+   4 5 6
+   7 8 9 10
+   11 12 13 14 15
 4) *
-* *
-* * *
-* * * *
-* * * * *
+   * *
+   * * *
+   * * * *
+   * * * * *
 
 Q.39 Accept 3 numbers from user using while loop and check each numbers palindrome? 
 
@@ -135,7 +137,7 @@ Q.49 Change all the string characters to capital letters using toUpperCase() met
 Q.50 What is the drawback of declaring methods directly in JavaScript objects?
 
 Q.51 Write a JavaScript program to get the current date. Expected Output : mm-dd-yyyy,
-mm/dd/yyyy or dd-mm-yyyy, dd/mm/yyyy?
+     mm/dd/yyyy or dd-mm-yyyy, dd/mm/yyyy?
 
 Q.52 Use indexOf to determine the position of the first occurrence of a in 30 Days Of
 JavaScript?
