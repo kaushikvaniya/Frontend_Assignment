@@ -78,7 +78,7 @@ Q.35 Write a program make a summation of given number (E.g., 1523 Ans: - 11) in 
 
 Q.36 Write a program you have to make a summation of first and last Digit. (E.g., 1234 Ans: -5) in JS?
 
-Q.37 Use console.log() and escape characters to print the following pattern in JS?
+# Q.37 Use console.log() and escape characters to print the following pattern in JS?
 
 1 1 1 1 1
 2 1 2 4 8
@@ -88,22 +88,22 @@ Q.37 Use console.log() and escape characters to print the following pattern in J
 
 Q.38 Use pattern in console.log in JS?
 
-1) 1
+# 1) 1
    1 0
    1 0 1
    1 0 1 0
    1 0 1 0 1
-2) A
+# 2) A
    B C
    D E F
    G H I J
    K L M N O
-3) 1
+# 3) 1
    2 3
    4 5 6
    7 8 9 10
    11 12 13 14 15
-4) *
+# 4) *
    * *
    * * *
    * * * *
