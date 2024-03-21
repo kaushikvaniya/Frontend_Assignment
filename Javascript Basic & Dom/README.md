@@ -81,9 +81,13 @@ Q.36 Write a program you have to make a summation of first and last Digit. (E.g.
 Q.37 Use console.log() and escape characters to print the following pattern in JS?
 
 1 1 1 1 1
+
 2 1 2 4 8
+
 3 1 3 9 27
+
 4 1 4 16 64
+
 5 1 5 25 125
 
 Q.38  pattern in  in JS?
