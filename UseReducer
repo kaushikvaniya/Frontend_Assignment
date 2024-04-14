@@ -1,0 +1,54 @@
+import React, { useReducer } from "react";
+
+const PrecticeUsereducer = () => {
+  //Initial state
+
+  const initial = {
+    petrol: 100,
+    Disel: 100,
+  };
+
+  const Add_petrol = "Add petrol";
+  const Sell_petrol = "Sell petrol";
+
+  // Reducer
+
+  const Stationmaster = (current = initial, action) => {
+    switch (action) {
+      case Add_petrol:
+        return { ...current, petrol: current.petrol + 100 };
+        break;
+      case Sell_petrol:
+        return { ...current, petrol: current.petrol - 100 };
+        break;
+
+      default:
+        break;
+    }
+  };
+  const [currentstock, dispetcher] = useReducer(Stationmaster, initial);
+
+  return (
+    <div>
+      <p>petrol : {currentstock.petrol}</p>
+      <p>Disel: {currentstock.Disel}</p>
+
+      <button
+        onClick={() => {
+          dispetcher(Add_petrol);
+        }}
+      >
+        Add petrol
+      </button>
+      <button
+        onClick={() => {
+          dispetcher(Sell_petrol);
+        }}
+      >
+        Sell petrol
+      </button>
+    </div>
+  );
+};
+
+export default PrecticeUsereducer;
