@@ -1,0 +1,21 @@
+import React from "react";
+import { useState } from "react";
+
+const Customhook = () => {
+  const [data, setdata] = useState(null);
+
+  const UseFetch = (url) => {
+    fetch(url)
+      .then((r) => r.json())
+      .then((r) => setdata(r.length))
+      .catch((e) => {
+        console.log(e);
+      });
+  };
+  UseFetch("https://jsonplaceholder.typicode.com/todos");
+  console.log(data);
+
+  return <div>my data : {data}</div>;
+};
+
+export default Customhook;
